@@ -2,7 +2,7 @@
 # SecureOps
 - company: SecureOps
   position: Security Analyst
-  duration: Oct 2021, Present
+  duration: Oct 2021, Nov 2022
   summary: As a security analyst, I investigate alerts related to phishing, scam, and spam emails, as well as network-based alerts such as suspicious malware on end devices in the cloud. My responsibilities include:<ul><li>Investigating alerts on Azure Sentinel and Microsoft Defender 365 for any suspicious activity</li><li>Scanning emails for phishing-related URLs that redirect users to webpages to harvest login information</li><li>Using Wireshark to analyze network packets and identify suspicious URLs on devices using Naxomi.</li></ul>
 
 # IT Specialist
