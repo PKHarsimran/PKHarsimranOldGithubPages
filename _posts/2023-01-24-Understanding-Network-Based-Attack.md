@@ -5,10 +5,10 @@ date: "2023-1-24"
 ---
 
 # Types of Attacks:
-Denial of Service (DoS) Attack
-Protocol-Based Attack
-Distributed Denial of Service (DDoS) Attack
-Man-in-the-Middle (MitM) Attack
+**Denial of Service (DoS) Attack** |
+**Protocol-Based Attack** |
+**Distributed Denial of Service (DDoS) Attack** |
+**Man-in-the-Middle (MitM) Attack** 
 
 
 • Denial of Service (DoS) Attack: A type of cyber attack in which an attacker attempts to make a particular network resource or service unavailable to its intended users. This is typically done by overwhelming the target with a flood of network traffic or by targeting a specific aspect of the service that renders it unavailable.
