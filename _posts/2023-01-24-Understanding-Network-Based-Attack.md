@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Understanding Network Based Attack"
-date: "2023-1-"
+date: "2023-1-24"
 ---
 
 # Types of Attacks:
