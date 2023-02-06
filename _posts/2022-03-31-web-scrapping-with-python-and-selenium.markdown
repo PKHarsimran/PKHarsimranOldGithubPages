@@ -30,4 +30,4 @@ Finally, we close the webdriver instance and the web browser.
 In this article, we have seen how to use Python and Selenium to scrape job listings from Indeed.com. With a few lines of code, we can automate the process of searching for jobs and extract relevant information, saving us time and effort. This technique can be applied to other websites as well, making web scraping a powerful tool for data collection and analysis.
 
 
-Here you can check out my project on github https://github.com/PKHarsimran/Indeed_JobTitle_Scrapper
+Here you can check out my project on github [code](https://github.com/PKHarsimran/Indeed_JobTitle_Scrapper)
