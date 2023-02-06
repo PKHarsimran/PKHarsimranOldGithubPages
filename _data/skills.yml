@@ -1,13 +1,11 @@
 # Skills
 # Persistant
 - skill: Persistant
-  description: Through persistence and a commitment to learning new skills, I have consistently achieved multiple goals. As an example, while attempting to configure a home automation application on a Raspberry Pi, I encountered a setback when I accidentally locked myself out due to forgetting some steps in securing the ssh port. However, I persevered and even documented my experience in a blog to ensure that I wouldn't make the same mistake again.
   
 # Optimistic
 - skill: Optimism
-  description: Always looking at positive side, able to learn new skills in challenging situations. 
-  
+
 # Quick learner
 - skill: Problem solving abilities
-  description: Coordinate with mutiple analysts on network security alerts to find remedy.
+ 
 
