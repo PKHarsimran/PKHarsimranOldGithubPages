@@ -4,7 +4,7 @@ title: "Web Scrapping with Python and Selenium"
 date: "2022-03-31 00:16:51 -0300"
 ---
 
-# Summary
+# Intro
 In today's job market, searching for a job can be a time-consuming and tedious task. However, with the help of web scraping and automation, this process can be made much easier and efficient. In this article, we will be using the Python programming language, along with the Selenium and Beautiful Soup libraries, to scrape job listings from Indeed.com.
 
 **What is Selenium?**
