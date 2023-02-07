@@ -17,13 +17,7 @@ Beautiful Soup is a Python library used for web scraping and parsing HTML and XM
 
 **The Code:**
 
-In this code, we start by importing the necessary libraries, including Selenium, Beautiful Soup, and the expected_conditions module from the selenium.webdriver.support library.
-
-Next, we initialize a webdriver instance using the Firefox web browser. We then navigate to the Indeed website, wait for the search bar to appear, and enter a search query for "Photography assistance." We then locate and click the search button, and parse the HTML content of the page using Beautiful Soup.
-
-Next, we use the Beautiful Soup find_all method to find all job listings on the page. For each job listing, we extract the job title, company name, and location and print them out.
-
-Finally, we close the webdriver instance and the web browser.
+In this code, a web scraper is implemented using the Python libraries click, openpyxl, pandas, selenium, and bs4. The code creates a command line interface using the click library that allows the user to choose a web driver, input a search query and location, and then scrapes job information from the website indeed.com. The data scraped is printed in the console and saved to an Excel workbook. The scraped data includes job title, company, and location. The code also uses the WebDriverWait method from the selenium library to wait for page elements to load before interacting with them. The page source is parsed using the BeautifulSoup library and job information is extracted using a combination of find_all and find methods.
 
 **Conclusion:**
 
