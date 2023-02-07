@@ -15,9 +15,17 @@ Selenium is a popular open-source framework for automating web browsers. It allo
 
 Beautiful Soup is a Python library used for web scraping and parsing HTML and XML documents. It allows us to search for specific HTML elements, extract their attributes and text, and store them in a structured format, such as a list or a dictionary.
 
+**What is Click and Why use Click?**
+
+Click is a Python library used for building command line interfaces. It provides a simple way to define commands and arguments, making it easier to write scripts and automate tasks. It also supports various features such as option parsing, configuration, and output formatting.
+
+**Pandas, I Love Pandas. But what is pandas?**
+
+Pandas, the powerful data manipulation and analysis library in Python, has made it effortless to store and analyze job information with just a few lines of code. With Pandas, you can easily create a dataframe to store the relevant details such as job title, company, and location. This data is then written to an Excel workbook with the help of the to_excel method, making it simple to store and manage the scraped information. Whether you're a data analyst, researcher, or just someone looking to keep track of job listings, Pandas provides a convenient solution to your data storage and manipulation needs.
+
 **The Code:**
 
-In this code, a web scraper is implemented using the Python libraries click, openpyxl, pandas, selenium, and bs4. The code creates a command line interface using the click library that allows the user to choose a web driver, input a search query and location, and then scrapes job information from the website indeed.com. The data scraped is printed in the console and saved to an Excel workbook. The scraped data includes job title, company, and location. The code also uses the WebDriverWait method from the selenium library to wait for page elements to load before interacting with them. The page source is parsed using the BeautifulSoup library and job information is extracted using a combination of find_all and find methods.
+In this code, a command line interface is created using the click library. The user can select the webdriver they want to use (Firefox, Chrome, Safari, or Edge), provide a search query and location to search for jobs on indeed.com. The selected webdriver is then initialized and used to navigate to indeed.com, where the search query and location are entered and the search is executed. The page source is then parsed into a BeautifulSoup object, and job listings are extracted from the page. Information about each job, including the title, company, and location, is printed and stored in a dataframe. Finally, this data is written to an Excel workbook, either by appending to an existing workbook or by creating a new workbook. The webdriver is then closed.
 
 **Conclusion:**
 
