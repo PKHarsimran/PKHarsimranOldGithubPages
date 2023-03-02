@@ -1,6 +1,5 @@
-skills:
-  - name: Positive Attitude
+  - skill: Positive Attitude
     description: Possess a positive and proactive attitude towards challenges and problem-solving, consistently approaching obstacles with determination and an optimistic mindset.
   
-  - name: Creative Problem-Solving
+  - skill: Creative Problem-Solving
     description: My commitment to personal growth and development has allowed me to find creative solutions through independent research, as demonstrated in a successful project where I configured a home automation server through self-directed learning and resourcefulness.
