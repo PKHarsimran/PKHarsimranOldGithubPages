@@ -33,3 +33,22 @@ The first step in setting up your Raspberry Pi as a torrenting VPN server is to 
 - Connect your Raspberry Pi to your router using an Ethernet cable, and plug in the power supply to turn it on.
 
 With Raspbian installed and your Raspberry Pi set up, you're ready to move on to the next step: installing and configuring Transmission.
+
+## Step 2: Install and Configure Transmission
+
+Transmission is a popular BitTorrent client that's free, open-source, and easy to use. In this step, we'll install Transmission on your Raspberry Pi and configure it to work with your VPN.
+
+  - First, open a terminal window on your Raspberry Pi or connect to it via SSH.
+  - Update your Raspberry Pi's package list and upgrade any outdated packages by running the following commands:
+  
+      sudo apt-get update 
+      sudo apt-get upgrade
+     
+  - Next, install the Transmission daemon by running the following command:
+
+      sudo apt-get install transmission-daemon
+  
+  - Once the installation is complete, stop the Transmission daemon by running the following command:
+  
+      sudo systemctl stop transmission-daemon
+
