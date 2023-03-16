@@ -65,9 +65,18 @@ Transmission is a popular BitTorrent client that's free, open-source, and easy t
   
         "rpc-whitelist": "*.*.*.*",
         "rpc-whitelist-enabled": false,
-    
-  - These lines will allow remote access to the Transmission web interface and remove the IP whitelist restrictions. Save the changes by pressing Ctrl+X, then Y, and finally Enter.
   
+  - Replace YOUR_PASSWORD, YOUR_USERNAME with values of your choice. These lines will enable authentication for remote access to the Transmission web interface
+  
+        "rpc-password": "YOUR_PASSWORD",
+        "rpc-username": "YOUR_USERNAME",
+        
+        
+Save the changes to the configuration file by pressing Ctrl+X, then Y, and finally Enter.
+
+  - Start the Transmission daemon again by running the following command:
+  
+        sudo systemctl start transmission-daemon
 
 
 
