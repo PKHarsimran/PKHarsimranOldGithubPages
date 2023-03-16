@@ -20,3 +20,16 @@ Before we dive into the setup process, let's go over what you'll need to follow 
   - A USB drive (optional, but recommended for storing downloaded files)
 
 Additionally, you'll need to have some basic knowledge of how to work with a Raspberry Pi, including how to install an operating system and connect to it via SSH.
+
+## Step 1: Install Raspbian and Set Up Your Raspberry Pi
+
+The first step in setting up your Raspberry Pi as a torrenting VPN server is to install the Raspbian operating system and set up your Raspberry Pi. There are a few different ways to do this, but one popular option is to use the Raspberry Pi Imager tool.
+
+- Download the Raspberry Pi Imager tool from the official Raspberry Pi website: https://www.raspberrypi.org/software/
+- Insert your microSD card into your computer and open the Raspberry Pi Imager tool.
+- Select the "Raspberry Pi OS" option and choose the version you want to install (we recommend the "Raspberry Pi OS with desktop" version for ease of use).
+- Choose your microSD card as the target drive and click "Write" to begin the installation process.
+- Once the installation is complete, eject the microSD card from your computer and insert it into your Raspberry Pi.
+- Connect your Raspberry Pi to your router using an Ethernet cable, and plug in the power supply to turn it on.
+
+With Raspbian installed and your Raspberry Pi set up, you're ready to move on to the next step: installing and configuring Transmission.
