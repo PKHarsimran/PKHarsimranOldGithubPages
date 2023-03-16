@@ -41,14 +41,14 @@ Transmission is a popular BitTorrent client that's free, open-source, and easy t
   - First, open a terminal window on your Raspberry Pi or connect to it via SSH.
   - Update your Raspberry Pi's package list and upgrade any outdated packages by running the following commands:
   
-      sudo apt-get update 
-      sudo apt-get upgrade
+        sudo apt-get update 
+        sudo apt-get upgrade
      
   - Next, install the Transmission daemon by running the following command:
 
-      sudo apt-get install transmission-daemon
+        sudo apt-get install transmission-daemon
   
   - Once the installation is complete, stop the Transmission daemon by running the following command:
   
-      sudo systemctl stop transmission-daemon
+        sudo systemctl stop transmission-daemon
 
