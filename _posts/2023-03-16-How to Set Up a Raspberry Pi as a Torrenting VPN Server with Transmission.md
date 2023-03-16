@@ -51,4 +51,23 @@ Transmission is a popular BitTorrent client that's free, open-source, and easy t
   - Once the installation is complete, stop the Transmission daemon by running the following command:
   
         sudo systemctl stop transmission-daemon
+        
+  - now configure Transmission to use your VPN. Open the configuration file by running the following command:
+  
+        sudo nano /etc/transmission-daemon/settings.json
+  
+  - Find the following lines in the file:
+
+        "rpc-whitelist": "127.0.0.1",
+        "rpc-whitelist-enabled": true,
+    
+  - Replace them with the following lines:
+  
+        "rpc-whitelist": "*.*.*.*",
+        "rpc-whitelist-enabled": false,
+    
+  - These lines will allow remote access to the Transmission web interface and remove the IP whitelist restrictions. Save the changes by pressing Ctrl+X, then Y, and finally Enter.
+  
+
+
 
