@@ -4,7 +4,7 @@ title: "How to Set Up a Raspberry Pi as a Torrenting VPN Server with Transmissio
 date: "2023-3-16"
 ---
 
-# How to Set Up a Raspberry Pi as a Torrenting VPN Server with Transmission
+> How to Set Up a Raspberry Pi as a Torrenting VPN Server with Transmission <
 
 Are you tired of your ISP monitoring your torrenting activity? Do you want to take advantage of the privacy and security benefits of a VPN while downloading torrents? Look no further than your trusty Raspberry Pi!
 
