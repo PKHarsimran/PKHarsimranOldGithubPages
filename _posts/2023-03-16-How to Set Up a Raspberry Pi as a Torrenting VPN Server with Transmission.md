@@ -80,6 +80,7 @@ Save the changes to the configuration file by pressing Ctrl+X, then Y, and final
 
 Check the status of the Transmission by using this command:
 
+
         sudo systemctl status transmission-daemon
         
 
