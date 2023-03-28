@@ -38,35 +38,35 @@ With Raspbian installed and your Raspberry Pi set up, you're ready to move on to
 
 Transmission is a popular BitTorrent client that's free, open-source, and easy to use. In this step, we'll install Transmission on your Raspberry Pi and configure it to work with your VPN.
 
-  - First, open a terminal window on your Raspberry Pi or connect to it via SSH.
-  - Update your Raspberry Pi's package list and upgrade any outdated packages by running the following commands:
+First, open a terminal window on your Raspberry Pi or connect to it via SSH.
+Update your Raspberry Pi's package list and upgrade any outdated packages by running the following commands:
   
         sudo apt-get update
         sudo apt-get upgrade
      
-  - Next, install the Transmission daemon by running the following command:
+Next, install the Transmission daemon by running the following command:
 
         sudo apt-get install transmission-daemon
   
-  - Once the installation is complete, stop the Transmission daemon by running the following command:
+Once the installation is complete, stop the Transmission daemon by running the following command:
   
         sudo systemctl stop transmission-daemon
         
-  - now configure Transmission to use your VPN. Open the configuration file by running the following command:
+now configure Transmission to use your VPN. Open the configuration file by running the following command:
   
         sudo nano /etc/transmission-daemon/settings.json
   
-  - Find the following lines in the file:
+Find the following lines in the file:
 
         "rpc-whitelist": "127.0.0.1",
         "rpc-whitelist-enabled": true,
     
-  - Replace them with the following lines:
+Replace them with the following lines:
   
         "rpc-whitelist": "*.*.*.*",
         "rpc-whitelist-enabled": false,
   
-  - Replace YOUR_PASSWORD, YOUR_USERNAME with values of your choice. These lines will enable authentication for remote access to the Transmission web interface
+Replace YOUR_PASSWORD, YOUR_USERNAME with values of your choice. These lines will enable authentication for remote access to the Transmission web interface
   
         "rpc-password": "YOUR_PASSWORD",
         "rpc-username": "YOUR_USERNAME",
