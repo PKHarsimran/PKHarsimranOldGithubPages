@@ -48,6 +48,5 @@ Before you begin, make sure you have a Raspberry Pi with Raspbian or a compatibl
 ## Conclusion
 SSHieldPi simplifies the process of hardening your Raspberry Pi's SSH configuration. By automating the steps outlined in my 2021 blog post, SSHieldPi saves you time and ensures consistent security across your devices. Give it a try and protect your Raspberry Pi with ease.
 
-You can find the SSHieldPi project on GitHub:
-🔗 [https://github.com/PKHarsimran/SSHieldPi-The-Raspberry-Pi-SSH-Protection-Solution]
+You can find the SSHieldPi project on [GitHub](https://github.com/PKHarsimran/SSHieldPi-The-Raspberry-Pi-SSH-Protection-Solution)
     
