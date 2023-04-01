@@ -1,8 +1,27 @@
 body.dark-mode {
-  background-color: #333;
-  color: #f0f0f0;
+  background-color: #1a1a1a;
+  color: #f1f1f1;
 }
 
 .dark-mode a {
-  color: #a8a8ff;
+  color: #61dafb;
 }
+
+.dark-mode a:hover {
+  color: #8be9fd;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: #f1f1f1;
+}
+
+.dark-mode blockquote {
+  color: #cccccc;
+}
+
+/* Add more styles for specific elements if needed */
