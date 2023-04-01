@@ -24,12 +24,15 @@ Before you begin, make sure you have a Raspberry Pi with Raspbian or a compatibl
 ## Installation
 
 1. Clone the SSHieldPi repository:
+
     git clone https://github.com/PKHarsimran/SSHieldPi-The-Raspberry-Pi-SSH-Protection-Solution.git
     
 2. Navigate to the SSHieldPi directory:
+
     cd SSHieldPi
 
 3. Make the script executable:
+
     chmod +x sshieldpi.sh
     
 ## Using SSHieldPi
@@ -37,6 +40,7 @@ Before you begin, make sure you have a Raspberry Pi with Raspbian or a compatibl
 1. Open sshieldpi.sh in a text editor and replace the placeholders for USERNAME and PASSWORD with the desired username and a strong password.
 2. Uncomment the appropriate lines depending on whether you are using a Debian/Ubuntu or CentOS/RHEL system.
 3. Run the script as root or with sudo privileges:
+
     sudo ./sshieldpi.sh
 
 4. The script will create a new user, grant sudo privileges, and apply the recommended SSH settings. The SSH service will be restarted to apply the changes.
