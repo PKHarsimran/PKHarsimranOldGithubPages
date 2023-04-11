@@ -5,11 +5,11 @@ date: "2023-4-11"
 ---
 
 ## Introduction:
+As a Security Operations Center (SOC) analyst, I found that the process of examining URLs for potential threats could be time-consuming and tedious. This involved capturing screenshots of VirusTotal results, verifying if the URL was flagged as malicious by vendors on VirusTotal, and scrutinizing WHOIS data to determine the domain's registration date. To revolutionize this process and offer valuable insights into URL security, I crafted a Python script that harnesses the capabilities of the VirusTotal API and Selenium WebDriver.
 
-In this blog post, we'll explore a Python script that analyzes a given URL using the VirusTotal API and Selenium WebDriver. The script provides valuable information like the VirusTotal score, result category, and WHOIS information. Additionally, it saves screenshots of the URL's details page and WHOIS tab on VirusTotal. This can be a helpful tool for security analysts or web developers who want to ensure their site is safe and secure.
+In this engaging blog post, we'll delve into this powerful Python script, designed to simplify URL analysis for security analysts and web developers alike. The script delivers essential information, such as the VirusTotal score, result category, and WHOIS data, at your fingertips. What's more, it automatically captures and saves screenshots of the URL's details page and WHOIS tab on VirusTotal. This all-in-one tool is tailored to optimize the safety and security of websites while dramatically reducing the time and effort required to investigate potentially malicious URLs. Join us as we explore this game-changing solution and transform your URL analysis experience.
 
 ## Code Overview:
-
 The script starts by importing the required modules and packages, such as time, base64, click, tldextract, whois, defang, selenium, and virustotal_python. These modules are essential for handling various tasks like adding delays, encoding URLs, creating command-line interfaces, extracting domains, and interacting with the VirusTotal API.
 
 ## Key Functions:
