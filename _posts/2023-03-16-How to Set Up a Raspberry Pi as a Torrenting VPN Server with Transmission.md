@@ -41,42 +41,42 @@ Transmission is a popular BitTorrent client that's free, open-source, and easy t
 First, open a terminal window on your Raspberry Pi or connect to it via SSH.
 Update your Raspberry Pi's package list and upgrade any outdated packages by running the following commands:
   
-        sudo apt-get update
-        sudo apt-get upgrade
+       sudo apt-get update
+       sudo apt-get upgrade
      
 Next, install the Transmission daemon by running the following command:
 
-        sudo apt-get install transmission-daemon
+       sudo apt-get install transmission-daemon
   
 Once the installation is complete, stop the Transmission daemon by running the following command:
   
-        sudo systemctl stop transmission-daemon
+       sudo systemctl stop transmission-daemon
         
 now configure Transmission to use your VPN. Open the configuration file by running the following command:
   
-        sudo nano /etc/transmission-daemon/settings.json
+       sudo nano /etc/transmission-daemon/settings.json
   
 Find the following lines in the file:
 
-        "rpc-whitelist": "127.0.0.1",
-        "rpc-whitelist-enabled": true,
+       "rpc-whitelist": "127.0.0.1",
+       "rpc-whitelist-enabled": true,
     
 Replace them with the following lines:
   
-        "rpc-whitelist": "*.*.*.*",
-        "rpc-whitelist-enabled": false,
+       "rpc-whitelist": "*.*.*.*",
+       "rpc-whitelist-enabled": false,
   
 Replace YOUR_PASSWORD, YOUR_USERNAME with values of your choice. These lines will enable authentication for remote access to the Transmission web interface
   
-        "rpc-password": "YOUR_PASSWORD",
-        "rpc-username": "YOUR_USERNAME",
+       "rpc-password": "YOUR_PASSWORD",
+       "rpc-username": "YOUR_USERNAME",
         
         
 Save the changes to the configuration file by pressing Ctrl+X, then Y, and finally Enter.
 
-  - Start the Transmission daemon again by running the following command:
+Start the Transmission daemon again by running the following command:
   
-        sudo systemctl start transmission-daemon
+       sudo systemctl start transmission-daemon
 
 Check the status of the Transmission by using this command:
 
@@ -149,3 +149,5 @@ Replace "192.168.x.x" with the actual IP address of your Raspberry Pi. On macOS,
 I've developed a handy script that automates the entire procedure. You can quickly get started by cloning the script from my [GitHub repository](https://github.com/PKHarsimran/External_Mount_Script).
 
 Before using the [script](https://github.com/PKHarsimran/External_Mount_Script/blob/main/Mount.sh), you will need to edit it to specify your USB drive and shared directory. Once you've made the necessary changes, you can set up a cron job to run the script at regular intervals or upon specific events, ensuring that your USB drive remains mounted to the shared directory even after system reboots or drive reconnections. This way, you can spend less time fiddling with configurations and more time focusing on what really matters: sharing and accessing your important files with ease.
+
+
