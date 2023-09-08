@@ -23,6 +23,10 @@ Initially, the script was designed to run indefinitely to monitor updates. Howev
 
 Upon execution, the script generates a log file for tracking its activities. It also produces a `hash.txt` file, serving as a reference point for future comparisons. This way, we can easily identify if an update has occurred on the Cortex agent.
 
+### Get the Script
+
+The script is publicly available on GitHub for anyone interested in taking a closer look or contributing. Here's the link: [Cortex Version Site Tracker on GitHub](https://github.com/PKHarsimran/CortexVerSiteTracker)
+
 ### What’s Next: Jira Integration
 
 The next step is integrating Jira to receive automated alerts. This will not only streamline our workflow but also create a centralized platform for all team members to stay updated.
@@ -30,5 +34,4 @@ The next step is integrating Jira to receive automated alerts. This will not onl
 ### Conclusion: The Power of Programming
 
 Creating this Python script was both challenging and rewarding. If you're new to the field, take this as a reminder that programming offers a versatile toolset for solving a wide range of problems. Additionally, numerous online resources and AI tools are available to assist you.
-
 
