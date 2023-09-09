@@ -6,7 +6,6 @@ categories: Python Automation
 ---
 
 ### The Problem: A Need for Automation
-
 In our daily operations, keeping track of Cortex agent updates was becoming cumbersome. Cortex doesn't offer built-in notifications for updates, leaving us in a bind. As our team heavily relies on Jira for project management, the need for a centralized alert system became clear.
 
 ### Why Python? 
