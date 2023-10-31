@@ -12,18 +12,26 @@ In the vast landscape of Linux, the convenience of plug-and-play for USB devices
 
 ### Automating USB Drive Mounting in Linux: A Quick Guide
 
-```bash
+
 # --- STEP 1: Discover the USB Drive's Identity ---
+```bash
 sudo blkid
+```
 # Note: Jot down the UUID. Example: /dev/sda1: UUID="ABC123DEF456" TYPE="ext4"
 
 # --- STEP 2: Designate a Home for Your USB Drive ---
+```bash
 sudo mkdir /mnt/myusb
+```
 
 # --- STEP 3: Whisper Instructions to Linux ---
 # Add the mounting details to /etc/fstab (Replace ABC123DEF456 with your UUID)
+```bash
 echo "UUID=ABC123DEF456 /mnt/myusb ext4 defaults,nofail 0 2" | sudo tee -a /etc/fstab
+```
 
 # --- STEP 4: Time for a Test Drive! ---
+```bash
 sudo mount -a
+```
 # Note: To truly test, consider rebooting and then checking /mnt/myusb
