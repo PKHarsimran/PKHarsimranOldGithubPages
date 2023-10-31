@@ -25,7 +25,7 @@ sudo mkdir /mnt/myusb
 ```
 
 ### --- STEP 3: Whisper Instructions to Linux ---
-## Add the mounting details to /etc/fstab (Replace ABC123DEF456 with your UUID)
+### Add the mounting details to /etc/fstab (Replace ABC123DEF456 with your UUID)
 ```
 echo "UUID=ABC123DEF456 /mnt/myusb ext4 defaults,nofail 0 2" | sudo tee -a /etc/fstab
 ```
