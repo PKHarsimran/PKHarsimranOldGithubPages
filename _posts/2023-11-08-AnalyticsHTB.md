@@ -19,7 +19,7 @@ After establishing the availability of the "Analytics" box, I proceeded with a c
 Here's the nmap command I used:
 
 ```bash
-    sudo nmap -p- --open -sS --min-rate 5000 -Pn -n -v 10.10.11.233 -oN nmap
+sudo nmap -p- --open -sS --min-rate 5000 -Pn -n -v 10.10.11.233 -oN nmap
 ```
 ![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/e4789716-e3a5-4f82-a8c8-613bd64b3d08)
 
