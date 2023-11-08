@@ -36,6 +36,8 @@ The command executed was:
 ```bash
 sudo nmap -p22,80 -sCV -v 10.10.11.233 -oN nmapsV
 ```
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/b1cca498-6abd-43ea-a6f3-92994aa4ae59)
+
 This command targets the specific open ports (22 and 80), requests service versions (-sV), runs default NSE scripts for more information (-sC), and increases verbosity for detailed output (-v). The results were saved to a file nmapsV.
 
 - SSH on port 22: The service running is OpenSSH version 8.9p1 Ubuntu 3ubuntu0.4. This is a recent version, and unless configured with weak credentials or keys, it might not be the easiest vector for exploitation.
