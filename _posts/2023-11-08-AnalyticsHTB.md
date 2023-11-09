@@ -85,3 +85,23 @@ echo '10.10.11.233 analytical.htb data.analytical.htb' | sudo tee -a /etc/hosts
 
 With this update, any requests to analytical.htb or data.analytical.htb will be directed to 10.10.11.233, allowing the site to load correctly and facilitating further investigation into the application hosted on the subdomain.
 
+## Task 8: Successful Exploitation with Metasploit
+After the initial manual exploitation attempt failed, I turned to Metasploit, a widely-used penetration testing framework that offers a suite of tools to test system vulnerabilities.
+I started by searching for relevant Metabase exploits within Metasploit:
+```bash
+search metabase
+```
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/c71e7a78-5fa5-4fe7-8baa-06f2eeca66ad)
+
+The search yielded an exploit module for a Metabase Setup Token Remote Code Execution vulnerability, which was disclosed on 2023-07-22. The module's rank was listed as 'excellent', indicating a high level of reliability and success rate.
+Using this information, I executed the following commands to set up the exploit:
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/13502e41-5c1c-4c6b-8f1e-ab8a0f5d6683)
+
+The Metasploit module targeted the Metabase application at data.analytical.htb on port 80, with a reverse shell payload set to connect back to my listener at 10.10.14.227 on port 4444.
+The exploit confirmed the target's vulnerability and successfully obtained a session:
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/8c3e3163-7a87-4de7-8531-5d1849d2482d)
+This successful exploitation resulted in a command shell session being opened, providing access to the target system. With this access, I can now execute commands directly on the compromised host, allowing for further enumeration and potential privilege escalation.
+
+
+
+
