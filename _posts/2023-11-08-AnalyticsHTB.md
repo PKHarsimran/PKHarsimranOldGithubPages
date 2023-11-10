@@ -133,7 +133,7 @@ After stabilizing my SSH foothold as metalytics, I executed the uname -a command
 uname -a
 ```
 
-```
+```bash
 metalytics@analytics:~$ uname -a
 Linux analytics 6.2.0-25-generic #25~22.04.2-Ubuntu SMP PREEMPT_DYNAMIC Wed Jun 28 09:55:23 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
 ```
