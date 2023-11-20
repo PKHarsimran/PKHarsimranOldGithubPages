@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-! Hey there! 😃 You've just landed in the fantastic realm of a tech-savvy engineer with a flair for the whimsical. My playground? The dynamic universe of embedded microcontrollers. Arduino and Raspberry Pi aren't just hobbies—they're a way of life! 🚀🤖
+Hey there! 😃 You've just landed in the fantastic realm of a tech-savvy engineer with a flair for the whimsical. My playground? The dynamic universe of embedded microcontrollers. Arduino and Raspberry Pi aren't just hobbies—they're a way of life! 🚀🤖
 
 I'm not just your average engineer; by day, I'm a vigilant security analyst battling cyber-villains and navigating the ever-changing threat landscape. Picture a cyber-superhero, just sans the cape. 💻🦸‍♂️
 
