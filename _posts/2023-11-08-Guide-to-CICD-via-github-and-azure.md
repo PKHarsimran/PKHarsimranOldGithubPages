@@ -13,6 +13,9 @@ If you're curious about blogging, tech, or just love a good story about learning
 
 So, get comfy and join me as we explore this journey, one question at a time.
 
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/cccd6b4e-0ff9-4be2-a42a-448e5b19514b)
+
+
 ### Q: To start, could you share what initially inspired you to create a blog and why you chose Jekyll as your platform?
 
 **A:** Absolutely! My path to blogging was a bit like stumbling upon a hidden treasure. One day, while exploring the nooks and crannies of GitHub, a fascinating world where coders share and collaborate, I bumped into Jekyll. It was like finding the perfect tool I didn't know I needed for my blog. There was this ready-made template, kind of like a ready-to-cook meal, and it instantly clicked with me. I thought, "Why not?" and forked the repo (which is tech-speak for making it mine to play around with). GitHub Pages was my sandbox – a place to build, tinker, and see my blog come to life. It felt like embarking on a fun adventure in a land where learning and experimenting were the main attractions.
