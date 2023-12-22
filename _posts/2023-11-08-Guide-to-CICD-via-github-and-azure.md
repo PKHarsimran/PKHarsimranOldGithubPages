@@ -7,6 +7,11 @@ author: "Harsimran Sidhu"
 ---
 
 ## How I deployed a blog on internet ?
+Hey there! Ever wondered how a simple blog turns into a tech adventure? That's what happened to me. This is a story about taking my blog from a basic setup to something way cooler with CI/CD, using Azure and GitHub.
+
+If you're curious about blogging, tech, or just love a good story about learning new things, you're in the right place. I'll share how I used Jekyll, Azure, and GitHub Actions to make my blog better and even land a job!
+
+So, get comfy and join me as we explore this journey, one question at a time.
 
 ### Q: To start, could you share what initially inspired you to create a blog and why you chose Jekyll as your platform?
 
