@@ -59,7 +59,7 @@ Before we part ways, I want to leave you with some resources that I found invalu
 3. Azure Static Web Apps Documentation: Everything you need to know about hosting with Azure. [Azure Static Web Apps Documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/)
 4. A Beginner's Guide to CI/CD: This article simplifies CI/CD concepts for beginners. [A Beginner's Guide to CI/CD](https://github.blog/2022-06-03-a-beginners-guide-to-ci-cd-and-automation-on-github/)
 5. Domain Setup with GoDaddy: If you're purchasing a domain, here's a helpful guide. [GoDaddy Domain Setup
-](https://ghost.org/help/godaddy-domain-setup-guide/)https://ghost.org/help/godaddy-domain-setup-guide/
+](https://ghost.org/help/godaddy-domain-setup-guide/)
 
 Remember, the journey of a thousand miles begins with a single step. So take that step, explore, learn, and most importantly, have fun with it!
 
