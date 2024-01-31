@@ -65,6 +65,7 @@ iPulse ICS (Port 20222):
 Host Entry in **/etc/hosts:**
 
     10.10.11.252    bizness.htb
+    
 ![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/dfcd9362-f589-4960-a41c-389ecbb97280)
 
  
