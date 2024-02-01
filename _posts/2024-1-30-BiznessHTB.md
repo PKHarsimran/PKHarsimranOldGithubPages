@@ -68,4 +68,23 @@ Host Entry in **/etc/hosts:**
     
 ![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/dfcd9362-f589-4960-a41c-389ecbb97280)
 
- 
+**Site**
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/b85ef185-33a7-4ae5-8ed5-08cafeaf2001)
+
+**Directory Brute-Forcing with Dirb:**
+Tool Used: Dirb
+**Command Executed:**
+
+    dirb https://bizness.htb
+
+**Dirb Scan Output:**
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/6b6ae432-ed5a-45d8-b492-ce63c48f3298)
+
+Discovered an interesting directory: /accounting/
+- **URL:** https://bizness.htb/accounting/
+- **Observation:** Hosting a login page.
+
+**After failing multiple times at brute force..**
+![image](https://github.com/PKHarsimran/PKHarsimran.github.io/assets/22066581/7779ec8f-a648-49da-a944-5680ef0333dc)
+
+
