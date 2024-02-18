@@ -32,7 +32,7 @@ footer-links:
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 #GithubSource
-location_to_github: ""
+location_to_github: "https://harsim.ca/"
 
 #Resume Section Control
 resume_profile_description: <p>As a cybersecurity analyst with a background in IT and work experience in cloud safety, automation, and both offensive and defensive security, I am a resourceful and analytical individual with superior conflict resolution skills. My excellent communication and ability to effectively collaborate with others have enabled me to consistently achieve goals. In addition to these strengths, I am also highly persistent and optimistic, qualities that have helped me to overcome challenges and find solutions to complex problems. Pursuing SC-200 (Microsoft Security Operations Analyst).</p>
